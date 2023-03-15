@@ -6,6 +6,7 @@
         {
             Zadanie1();
             Zadanie2();
+            Zadanie3();
         }
 
         static void Zadanie1()
@@ -41,7 +42,14 @@
             fruits.Add("peach");
             fruits.Add("strawberry");
             fruits.Add("blueberry");
-
+            string result = String.Join(", ", fruits.ToArray());
+            Console.WriteLine(result);
+            fruits.Remove(fruits[0]);
+            fruits.RemoveAt(fruits.Count - 1);
+            foreach (var fruit in fruits)
+            {
+                Console.WriteLine(fruit);
+            }
         }
     }
 }

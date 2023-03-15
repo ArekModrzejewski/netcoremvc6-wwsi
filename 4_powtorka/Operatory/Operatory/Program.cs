@@ -51,7 +51,7 @@
             int b = 12;
             int add = a + b;
             int sub = a - b;
-            double div = a / b;
+            double div = Convert.ToDouble(a) / Convert.ToDouble(b);
             int mul = a * b;
             int mod = a % b;
             Console.WriteLine($"add = {add}");
